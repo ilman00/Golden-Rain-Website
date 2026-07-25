@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-black: #0d0d0d;
+  --color-white: #ffffff;
+  --color-offwhite: #f7f7f5;
+
+  --color-gold-light: #d1ad5f;
+  --color-gold: #b08d3f;
+  --color-gold-dark: #8a6c2e;
+
+  --color-gray: #6e6e6e;
+  --color-gray-light: #a3a3a3;
+
+  /* Fonts */
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
