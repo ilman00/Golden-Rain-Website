@@ -10,7 +10,7 @@ export default function ServicesPreview() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/Images/2.webo')" }}
+        style={{ backgroundImage: "url('/images/2.webp')" }}
       />
       {/* Dark gradient overlay for legibility */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/85 to-black/95" />
