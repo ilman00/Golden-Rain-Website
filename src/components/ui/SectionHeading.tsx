@@ -3,7 +3,8 @@ interface SectionHeadingProps {
   title: string;
   description?: string;
   align?: "left" | "center";
-  light?: boolean; // true = for use on dark/charcoal backgrounds
+  light?: boolean; 
+  className?: string;
 }
 
 export default function SectionHeading({
@@ -12,13 +13,14 @@ export default function SectionHeading({
   description,
   align = "left",
   light = false,
+  className = "",
 }: SectionHeadingProps) {
   const alignClasses = align === "center" ? "text-center mx-auto" : "text-left";
   const titleColor = light ? "text-cream" : "text-charcoal";
   const descColor = light ? "text-steel-light" : "text-steel";
 
   return (
-    <div className={`max-w-2xl ${alignClasses}`}>
+    <div className={`max-w-2xl ${alignClasses} ${className}`}>
       {eyebrow && (
         <p className="mb-3 font-mono text-xs tracking-[0.2em] uppercase text-gold">
           {eyebrow}

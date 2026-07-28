@@ -54,7 +54,7 @@ export default function Hero() {
                 <div className="relative">
                     <div className="aspect-[4/5] border border-gold/30 bg-charcoal-soft flex items-center justify-center">
                         <img
-                            src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000&auto=format&fit=crop"
+                            src="/Images/3.jpg"
                             onError={(e) => {
                                 // Fallback to another working car repair photo if main link fails
                                 e.currentTarget.src = "https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1000&auto=format&fit=crop";
