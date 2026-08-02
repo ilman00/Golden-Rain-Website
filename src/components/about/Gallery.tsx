@@ -2,15 +2,15 @@ import SectionHeading from "../ui/SectionHeading";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=800&auto=format&fit=crop",
+    src: "/images/about/diagnostic-bay.jpg",
     caption: "Diagnostic bay",
   },
   {
-    src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop",
+    src: "/images/about/brake-service.jpg",
     caption: "Brake service",
   },
   {
-    src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop",
+    src: "/images/about/alignment-rack.webp",
     caption: "Alignment rack",
   },
   {

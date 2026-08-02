@@ -73,4 +73,4 @@ export default function ServiceCard({ service, variant = "default" }: ServiceCar
       <p className="mt-2 font-body text-sm text-gray leading-relaxed">{service.summary}</p>
     </div>
   );
-}
+} 
