@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { Service } from "../../data/services";
 
 interface ServiceCardProps {
@@ -6,10 +7,24 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ service, variant = "default" }: ServiceCardProps) {
+  const [flipped, setFlipped] = useState(false);
+
   if (variant === "flip") {
+    const canHover =
+      typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches;
+
     return (
-      <div className="group [perspective:1200px] h-80">
-        <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div
+        className="group [perspective:1200px] h-80"
+        onMouseEnter={canHover ? () => setFlipped(true) : undefined}
+        onMouseLeave={canHover ? () => setFlipped(false) : undefined}
+        onClick={!canHover ? () => setFlipped((f) => !f) : undefined}
+      >
+        <div
+          className={`relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] ${
+            flipped ? "[transform:rotateY(180deg)]" : ""
+          }`}
+        >
           {/* Front */}
           <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden">
             <div
@@ -22,6 +37,11 @@ export default function ServiceCard({ service, variant = "default" }: ServiceCar
               <h3 className="mt-2 font-display text-xl font-semibold text-white">
                 {service.title}
               </h3>
+              {!canHover && (
+                <span className="mt-3 font-mono text-[10px] tracking-widest uppercase text-gold-light">
+                  Tap for details
+                </span>
+              )}
             </div>
           </div>
 
