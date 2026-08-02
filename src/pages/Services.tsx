@@ -5,7 +5,7 @@ import CTASection from "../components/home/CTASection";
 export default function Services() {
   return (
     <>
-      <section className="bg-charcoal">
+      <section className="bg-black">
         <div className="mx-auto max-w-6xl px-6 py-40">
           <SectionHeading
             eyebrow="Our Services"

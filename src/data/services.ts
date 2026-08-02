@@ -3,6 +3,7 @@ export interface Service {
   title: string;
   summary: string;
   details: string[];
+  image: string;
 }
 
 export const services: Service[] = [
@@ -17,6 +18,7 @@ export const services: Service[] = [
       "Drivetrain & CV joint repair",
       "Timing belt & chain replacement",
     ],
+    image: "/images/services/Auto+repair.webp",
   },
   {
     code: "SVC-02",
@@ -29,6 +31,7 @@ export const services: Service[] = [
       "Starter motor replacement",
       "Dashboard & sensor diagnostics",
     ],
+    image: "/images/services/auto-electric-repair.jpg",
   },
   {
     code: "SVC-03",
@@ -41,6 +44,7 @@ export const services: Service[] = [
       "Multi-point safety inspection",
       "Fluid top-ups & flushes",
     ],
+    image: "/images/services/general-repair.jpg",
   },
   {
     code: "SVC-04",
@@ -53,6 +57,7 @@ export const services: Service[] = [
       "Compressor & clutch repair",
       "Blower motor service",
     ],
+    image: "/images/services/AC-reepair.webp",
   },
   {
     code: "SVC-05",
@@ -65,6 +70,7 @@ export const services: Service[] = [
       "Rust treatment",
       "Bumper & panel refinishing",
     ],
+    image: "/images/services/denting-and-painting.jpg",
   },
   {
     code: "SVC-06",
@@ -77,6 +83,7 @@ export const services: Service[] = [
       "Parking sensor & camera fitting",
       "Lighting upgrades",
     ],
+    image: "/images/services/accessories-fitting.jpg",
   },
   {
     code: "SVC-07",
@@ -89,6 +96,7 @@ export const services: Service[] = [
       "Fluid level check",
       "Under-car inspection",
     ],
+    image: "/images/services/oil-change.jpg",
   },
   {
     code: "SVC-08",
@@ -101,6 +109,7 @@ export const services: Service[] = [
       "Wax & sealant application",
       "Headlight restoration",
     ],
+    image: "/images/services/car-polish.jpg",
   },
   {
     code: "SVC-09",
@@ -113,5 +122,6 @@ export const services: Service[] = [
       "Leather conditioning",
       "Full interior detail",
     ],
+    image: "/images/services/seats-cleaning.jpg",
   },
 ];
